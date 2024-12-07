@@ -143,7 +143,7 @@ DATABASES = {
         'USER':'postgres',
         'PASSWORD':'tonikr8s',
         'PORT':'5432',
-        'HOST':'localhost',
+        'HOST': 'dpg-cta2rpqj1k6c738gmcag-a',
     }
 }
 
