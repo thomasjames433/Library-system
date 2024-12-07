@@ -7,8 +7,5 @@ urlpatterns=[
     path('api/auth/login',UserLogin.as_view(),name='user_login'),
     
     path('api/books',BookListAdd.as_view(),name='booklistadd'),
-    path('api/books/<id>',BookViewUpdateDelete.as_view(),name='bookviewupdatedelete'),
-
-    path('api/users',ViewUser.as_view(),name='viewuser'),
-    path('api/users/<id>',ViewUser.as_view(),name='edituser')
+    path('api/books/<id>',BookViewUpdateDelete.as_view(),name='bookviewupdatedelete')
 ]
