@@ -82,7 +82,12 @@ class BookListAdd(generics.CreateAPIView,generics.ListAPIView):
     permission_classes=[IsAdminorSafe2]
     
     queryset=Book.objects.all()
-    serializer_class=BookSerializer
+
+    def get_serializer_class(self):
+        if self.request.method=='GET':  
+            return BookListSerializer
+        return BookSerializer
+
 
 class BookViewUpdateDelete(generics.RetrieveAPIView,generics.UpdateAPIView,generics.DestroyAPIView):
     authentication_classes=[JWTAuthentication]
