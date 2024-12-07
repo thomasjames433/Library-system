@@ -95,3 +95,19 @@ class BookViewUpdateDelete(generics.RetrieveAPIView,generics.UpdateAPIView,gener
     queryset=Book.objects.all()
     serializer_class=BookSerializer
     lookup_field='id'
+
+class ViewUser(generics.CreateAPIView,generics.ListAPIView):
+    authentication_classes=[JWTAuthentication]
+    permission_classes=[IsAdminUser]
+
+    queryset=User.objects.all()
+    serializer_class=UserViewSerializer
+
+class EditUser(generics.UpdateAPIView,generics.DestroyAPIView):
+    authentication_classes=[JWTAuthentication]
+    permission_classes=[IsAdminUser]
+
+    queryset=User.objects.all()
+    serializer_class=UserViewSerializer
+    lookup_field='id'
+
