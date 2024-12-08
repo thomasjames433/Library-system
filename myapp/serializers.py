@@ -28,3 +28,17 @@ class BookListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Book
         fields = ['title', 'author']
+
+class UserViewSerializer(serializers.ModelSerializer):
+    class Meta:
+        model=User
+        fields=['id','username','password','email','reg_date','membership']
+        extra_kwargs = {'password': {'write_only': True},
+                       'id': {'read_only': True} 
+                       } 
+
+class UserUpRetDel(serializers.ModelSerializer):
+    class Meta:
+        model=User
+        fields=[ 'id', 'username','password','email','reg_date','membership']
+        extra_kwargs={ 'id':{'read_only':True} }

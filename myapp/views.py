@@ -95,3 +95,45 @@ class BookViewUpdateDelete(generics.RetrieveAPIView,generics.UpdateAPIView,gener
     queryset=Book.objects.all()
     serializer_class=BookSerializer
     lookup_field='id'
+
+class UserView(generics.CreateAPIView,generics.ListAPIView):
+    authentication_classes=[JWTAuthentication]
+    permission_classes=[IsAdminUser]
+
+    queryset= User.objects.all()
+    serializer_class=UserViewSerializer
+
+    def perform_create(self, serializer):
+        user = serializer.save()
+        
+        
+        user.set_password(serializer.validated_data['password'])
+        
+        user.save()
+
+from django.contrib.auth.hashers import make_password
+
+class IsAdminorUser(BasePermission):
+    def has_permission(self, request, view):
+        if request.user and (request.user.is_superuser or request.user.is_staff):
+            return True
+        
+        if view.kwargs.get('username') and request.user.username == view.kwargs.get('username'):
+            return True
+        
+        return False
+
+class UserUpdate(generics.RetrieveAPIView,generics.UpdateAPIView,generics.DestroyAPIView):
+    authentication_classes=[JWTAuthentication]
+    permission_classes=[IsAdminorUser]
+    queryset=User.objects.all()
+    serializer_class=UserUpRetDel
+    lookup_field='username'
+
+    def perform_update(self, serializer):
+        password=serializer.validated_data.get('password')
+
+        if password:
+            serializer.validated_data['password'] = make_password(password)
+        
+        serializer.save()

@@ -10,6 +10,12 @@ class User(AbstractUser):
     reg_date=models.DateField(auto_now_add=True)
     membership=models.CharField(max_length=10,choices=membership_choices,default='regular')
 
+    email = models.EmailField(
+        blank=False,  
+        null=False,   
+        help_text='A valid email address is required.'
+    )
+
     groups = models.ManyToManyField(
         'auth.Group',
         related_name='custom_user_set',  # Custom related_name
