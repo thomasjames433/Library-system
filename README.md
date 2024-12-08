@@ -1,13 +1,13 @@
 # Library System
 Library system made using Django,Django-Rest and PostgreSQl
 
-##Features:
+## Features:
 JWT User authentication
 Hashed Passwords
 User- Add, view, update, and delete
 Books-Add, view, update, and delete books
 
-##Functionality
+## Functionality
 
 ### api/books
  GET-The list of books is visible to anyone
