@@ -34,3 +34,6 @@ Books-Add, view, update, and delete books
 ### api/users/username 
 GET | PATCH | PUT | DELETE- The admin and the user with the username have permissions to view their details, modify them, and delete
 
+## Backend Hosted URL
+The backend is hosted on render at 
+#### https://library-system-6.onrender.com
