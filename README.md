@@ -65,3 +65,6 @@ JWT for Authentication
 
 PostgreSQL
 
+## LICENSE
+[MIT License](LICENSE)
+
