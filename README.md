@@ -3,18 +3,23 @@ Library system made using Django,Django-Rest and PostgreSQl
 
 ## Features:
 JWT User authentication
+
 Hashed Passwords
+
 User- Add, view, update, and delete
+
 Books-Add, view, update, and delete books
 
 ## Functionality
 
 ### api/books
  GET-The list of books is visible to anyone
+
  POST- A book can be added only by the admin
 
 ### api/books/id
   GET- The details of the book can only be viewd if the user is authenticated
+ 
   PATCH | PUT | DELETE- Can only be done by admin
 
 ### api/auth/register
