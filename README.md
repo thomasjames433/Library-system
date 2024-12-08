@@ -1,5 +1,5 @@
 # Library System
-Library system made using Django,Django-Rest and PostgreSQl
+Library system made using Django,Django-Rest and PostgreSQL to manage books and users while protecting sensitive information and endpoints
 
 ## Features:
 JWT User authentication
