@@ -12,20 +12,20 @@ Books-Add, view, update, and delete books
 
 ## Functionality
 
-### api/books
+#### api/books
  GET-The list of books is visible to anyone
 
  POST- A book can be added only by the admin
 
-### api/books/id
+#### api/books/id
   GET- The details of the book can only be viewd if the user is authenticated
  
   PATCH | PUT | DELETE- Can only be done by admin
 
-### api/auth/register
+#### api/auth/register
   POST-To register User
 
-### api/auth/login
+#### api/auth/login
   POST-To login User
 
 ### api/users
