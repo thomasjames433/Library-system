@@ -63,5 +63,5 @@ Django-Rest-Framework
 
 JWT for Authentication
 
-PostgreSQl
+PostgreSQL
 
