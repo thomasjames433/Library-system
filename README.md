@@ -2,13 +2,10 @@
 Library system made using Django,Django-Rest and PostgreSQL to manage books and users while protecting sensitive information and endpoints
 
 ## Features:
-JWT User authentication
-
-Hashed Passwords
-
-User- Add, view, update, and delete
-
-Books-Add, view, update, and delete books
+- JWT User authentication
+-Hashed Passwords
+- User- Add, view, update, and delete
+- Books-Add, view, update, and delete books
 
 ## Functionality
 
