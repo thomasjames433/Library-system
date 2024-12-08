@@ -56,3 +56,12 @@ The backend is hosted on render at
 #### 4. Run the system:
    `python manage.py runserver`
 
+## Technologies Used
+Django
+
+Django-Rest-Framework
+
+JWT for Authentication
+
+PostgreSQl
+
