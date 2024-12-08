@@ -42,9 +42,9 @@ The backend is hosted on render at
 ##To run the library system:
 
 #### 1. Clone the repository:
-   git clone "https://github.com/thomasjames433/Library-system.git"
+   `git clone "https://github.com/thomasjames433/Library-system.git"`
 #### 2. Navigate into the project directory:
-   cd Library-system
+   `cd Library-system`
 #### 3. Install dependencies:
    `pip freeze > requirements.txt`
    
@@ -54,5 +54,5 @@ The backend is hosted on render at
    
    `To createsuperuser: python manage.py createsuperuser`
 #### 4. Run the system:
-   python manage.py runserver
+   `python manage.py runserver`
 
