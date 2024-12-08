@@ -51,13 +51,10 @@ The backend is hosted on render at
    `python manage.py runserver`
 
 ## Technologies Used
-Django
-
-Django-Rest-Framework
-
-JWT for Authentication
-
-PostgreSQL
+- Django
+- Django-Rest-Framework
+- JWT for Authentication
+- PostgreSQL
 
 ## LICENSE
 [MIT License](LICENSE)
