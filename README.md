@@ -46,10 +46,10 @@ The backend is hosted on render at
 #### 2. Navigate into the project directory:
    cd Library-system
 #### 3. Install dependencies:
-   pip freeze > requirements.txt
-   python manage.py makemigrations
-   python manage.py migrate
-   To createsuperuser: python manage.py createsuperuser
+   `pip freeze > requirements.txt`
+   `python manage.py makemigrations`
+   `python manage.py migrate`
+   `To createsuperuser: python manage.py createsuperuser`
 #### 4. Run the system:
    python manage.py runserver
 
