@@ -28,10 +28,10 @@ Books-Add, view, update, and delete books
 #### api/auth/login
   POST-To login User
 
-### api/users
+#### api/users
   GET | POST - Can only be viewed and added by the admin
 
-### api/users/username 
+#### api/users/username 
 GET | PATCH | PUT | DELETE- The admin and the user with the username have permissions to view their details, modify them, and delete
 
 ## Backend Hosted URL
