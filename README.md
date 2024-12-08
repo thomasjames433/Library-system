@@ -37,3 +37,7 @@ GET | PATCH | PUT | DELETE- The admin and the user with the username have permis
 ## Backend Hosted URL
 The backend is hosted on render at 
 #### https://library-system-6.onrender.com
+
+
+## Clone this repository
+git clone "https://github.com/thomasjames433/Library-system.git"
